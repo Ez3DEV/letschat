@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+    <chats>
+        <chat name="Spanish chat">
+            <messageHistory>
+                <pinnedMessage>Welcome to "Spanish chat"! Please, only chat in spanish in here.</pinnedMessage>
+                <message>Hola xd</message>
+            </messageHistory>
+        </chat>
+        <chat name="English chat">
+            <messageHistory>
+                <pinnedMessage>Welcome to "English chat"! Please, only chat in english in here.</pinnedMessage>
+                <message>Hi lmao</message>
+            </messageHistory>
+        </chat>
+    </chats>
+</xml>

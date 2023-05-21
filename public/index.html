@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>LetsChat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+        <!-- Modals go here -->
+        <!-- Reference: https://www.gethalfmoon.com/docs/modal -->
+
+        <!-- Page wrapper start -->
+        <div class="page-wrapper with-sidebar" data-sidebar-type="overlayed-sm-and-down">
+
+            <!-- Sticky alerts (toasts), empty container -->
+            <!-- Reference: https://www.gethalfmoon.com/docs/sticky-alerts-toasts -->
+            <div class="sticky-alerts"></div>
+
+            <!-- Sidebar overlay -->
+            <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+            <!-- Sidebar start -->
+            <div class="sidebar">
+                <!-- Reference: https://www.gethalfmoon.com/docs/sidebar -->
+                <button onclick="halfmoon.toggleDarkMode();" class="btn btn-primary">Dark mode</button>
+            </div>
+            <!-- Sidebar end -->
+
+            <!-- Content wrapper start -->
+            <div class="content-wrapper">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <div class="w-600">
+                        <h1>Chat!</h1>
+                        <form>
+                            <input class="form-control form-control-lg" id="message" type="text" placeholder="message" />
+                            <br/>
+                            <input class="btn btn-primary" type="submit" value="Send" />
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mx-20 gap-0 align-items-start justify-content-center w-three-quarters overflow-y-auto overflow-x-hidden h-500 border rounded shadow" id="thread">
+
+                </div>
+            </div>
+            <!-- Content wrapper end -->
+
+        </div>
+        <!-- Page wrapper end -->
+
+        <!-- Halfmoon JS -->
+        <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script src="client.js"></script>
+    </body>
+
+</html>
