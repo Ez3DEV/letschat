@@ -1,5 +1,6 @@
 // initializing socket, connection to server
-var socket = io.connect("http://192.168.1.51:7777");
+//TESTING var socket = io.connect("http://192.168.1.51:7777");
+var socket = io.connect("https://letschat.vercel.app");
 socket.on("connect", function(data) {
     socket.emit("join", "Hello server from client");
 });
